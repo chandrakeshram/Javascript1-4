@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id ="Title">This title will be changed when you click the button</h1>
+  <button id ="btn" onclick="onClick()" onkeypress="alertmess('Chandrakesh')">CLick Me</button>
+  <script>
+    function onClick(){
+      document.getElementById('Title').innerHTML='You have clicked the button';
+    }
+    document.write("This is document.write"); //Way to print in javascript'
+    function alertmess(name){
+      alert('Hello'+this.name); //Another way to print in javascript
+
+    }
+    
+    //Console API
+    console.log("Hello World");
+    console.warn("This is warning");
+    console.error("This is an error");
+    //Variables in javascript
+    //Variables are named containers to store data values.
+    //There are 4 ways to create variables
+    /* Using var 
+       Using const
+       Using let
+       Without above three
+       =====*********------------*************========***********------------=====
+       var was used to create variables earlier before ES6 and is not used nowadays.
+       var allows redeclaration of variables
+       var can lead to bugs in your code 
+
+       let is used to create variables whose values can change within the code.
+       let is block scoped variable
+       let is more efficient than var 
+       let do not allow redeclaration
+       let allows change of value 
+
+       const is used to create variable whose value will never change
+       const does not allow redeclaration and change of values
+       generally used for declaring constants in the programs whose value remain same during entire program  
+
+       nn bb ss u
+
+
+    */
+   let p = null;
+   let q = 32;
+   let r = 32353252335n;
+   let r1 = BigInt(3235325);
+   let s = true;
+   let u = "Umbrella";
+   let v = Symbol("Sign in to continue");
+   let w;
+   console.log(p,q,r,r1,s,u,v,w)
+   var a=32;
+   var a =21; //Redeclaration is allowed here
+   var b=32;
+   let c= a+b;
+   c=34;
+   
+   const mull = ()=>{
+    let c = 23;   //range of this c is only limited to mull function
+    console.log(c)
+   }
+   const mul = (a)=>{
+    return a*a;
+
+   }
+mull();
+
+   console.log(c)
+   console.log(mul(32,23));
+   let naam = "Chandrakesh";
+   let age = 23;
+   let cgpa = 8.86;
+   let div = 'A';
+   let surnaam = "Ram"
+   console.log("Full  name will be "+naam+" "+surnaam);
+     /*
+     
+     Obejcts are non-primitive data types
+     Objects are key-value pairs
+     Key must be unique */
+    
+    const item ={
+      "age" :32, 
+      "name":"Chandra",
+      "height" :2.3
+    }
+    console.log(item.name);
+    const inrange=(num)=>{
+      if(num >= 10 && num<=20){
+        return true;
+      }
+      else return false;
+
+    }
+    console.log(inrange(12));
+
+    const switchuse=(a,b,op)=>{
+      switch (op) {
+        case '+':
+          return a+b;
+          break;
+        case '-':
+          return a-b;
+          break;
+        case '*':
+          return a*b;
+          break;
+        case '/':
+          if(b!==0 ){
+            return a/b;
+          }
+          else return b/a;
+        default:
+          return -1;
+      }
+
+    }
+    console.log(switchuse(32,8,'hshlk'));
+
+    const divcheck=(a)=>{
+      if(a%2===0 || a%3===0){
+        return true;
+      }
+      else return false;
+    }
+    console.log(divcheck(5));
+    const canDrive=(age)=>{
+
+      if(age>=18){
+        console.log("You can drive");
+      }
+      else console.log("You cannot drive");
+    }
+    canDrive(17);
+
+  </script>
+</body>
+</html>
