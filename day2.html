@@ -82,7 +82,39 @@
 
         let fruit= 'This is \'banana\r fruit';
         console.log(fruit);
-        
+
+        //String methods
+        let str = "Elephant\n";
+        console.log(str.length);
+        console.log(str.toUpperCase());
+        //Indexing in javascript starts with 0 
+
+        console.log(str.slice(2));
+        let sample = "THis is my country india                                      ";
+        let sample1 = sample.replace("country", "motherland");
+        console.log(sample1);
+        console.log(str.concat(sample, sample1));
+        console.log(sample.trim());
+
+        //Strings are immutable in nature and cannot be edited.
+        let str1 = "";
+        for(let i =0;i<str.length;i++){
+            console.log(str[i]);
+            str1+=str[i];
+            
+        }
+        console.log(str)
+        //Whenever we use methods of strings the original string do not changes new string is returned.
+        console.log("har\"".length);
+
+        //Pratice Set 4
+
+        //=============================================================
+        console.log("har\"".length);  //Answer is 4 since \" is treated as single character i.e escape character
+
+        const sent = "This is new string ";
+        let str2 = "string ";
+        console.log(`The string ${sent} ${sent.includes(str2) ? "has ${str2}":"does not have ${str2}"}`);
 
         
 
