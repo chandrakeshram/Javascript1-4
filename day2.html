@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let age = prompt("Please enter the age of individual");
+        // console.log(typeof(age));
+        // if(age>=18){
+        //     alert("Success, You are eligible to vote ");
+        // }
+        // else{
+        //     alert("Failed, You are not eligible to vote ");
+        // }
+        let n =7;
+        let sum =1;
+        for(let i=1;i<=n;i++){
+            sum*=i;
+        }
+        console.log(sum);
+        //for in loop in javascript
+
+        const obj ={
+            chandrakesh:32,
+            kiran:48,
+            sameer:89,
+            naresh:78
+        }
+        for(let a in obj ){
+            console.log(`Marks of ${a} will be ${obj[a]}`);
+        }
+        for(let a of "Malayalam"){
+            console.log(a)
+        }
+        //do while loop
+        do{
+            console.log("n khatam hone wala hai" +n);
+            n--;
+        }
+        while(false);
+
+        //Practice set 3
+
+        //Q1)
+        const obj1 = {
+            harry:33,
+            aakash:67,
+            rohan:45
+
+        }
+        for(let a in obj1){
+            console.log(`Marks of ${a} will be ${obj1[a]}`);
+        }
+
+        const  a =32;
+        while(true){
+            let b =prompt("Enter the number ");
+            if(a==b){
+                alert("You have entered correct pin");
+                break;
+            }
+            else{
+                alert("Sorry you have not entered correct pin");
+            }
+
+        }
+        
+        const avgOf5 =(a,b,c,d,e)=>{
+            return (a+b+c+d+e)/5;
+
+        }
+        console.log(avgOf5(10,20,30,40,50));
+
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
