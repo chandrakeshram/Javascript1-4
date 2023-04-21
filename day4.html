@@ -6,12 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let arr = [32,"Absent",54,66,false];  //In JS, an array is collection of elements which may be of different type
+        const arr = [32,"Absent",54,66,false];  //In JS, an array is collection of elements which may be of different type
         console.log(arr.length);
         for(let i=0;i<arr.length;i++){
             console.log(arr[i]);
         }
-        console.log(arr[6]);
+        console.log(arr[6]); //will be undefined because 6th index is not present in the array
+        arr[4]=true;
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);  //changing the value of array and arrays are mutable and can be changed.
+        }
+        console.log(typeof(arr)); //arrays are objects 
+
+        //======================ARRAY METHODS==============================
+        const arr1 =[32,33,45,33,67];
+        let arr2 = arr1.toString();  //toString method is used to convert array into string
+        const arr3 = arr1.join("->")
+        console.log(arr3);//join method is used to join elements by connector
+        console.log(arr1.pop()); //it is used to return last element and it deletes last element also
+        console.log(arr1.push(100)); //it is used to append 100 at the end of the array and return length of the Array
+        console.log(arr1.shift()); //it is used to return first element and it deletes first element also
+        console.log(arr1.unshift(3)); //it is used to add element at the start of the array and returns length of the array
+        console.log(arr1)
+        //Delete operator
+        delete(arr1[3]);
+        console.log(arr1.length)  //After deleting the element also the length of array is unchanged.(IMP)
+
+        const integrated = arr.concat(arr1,arr2);  //concat method is used to contenate two or more arrays
+        console.log(integrated);
+        console.log(arr1.sort()); //remember sort will sort the array alphabetically not in ascending order or desceding order(IMP)
+    
+        
  
     </script>
 </head>
