@@ -8,7 +8,7 @@
     <script>
         //All string methods
 
-        let sam = "This is a string , string is very useful ";
+        let sam = "This is a string , string is very useful";
         console.log(sam.length); //it will return length of the string
         console.log(sam.trim)//it will remove all the starting and ending spaces.
         console.log(sam.slice(3));  //it will extract some part of the string
@@ -18,15 +18,37 @@
         console.log(sam.replace(/string/g,"STRING")); //same as above but due to global expression /g it will replace all the find matches 
         console.log(sam.toUpperCase());  //convert entire string to uppercase
         console.log(sam.toLowerCase());  //convert entire string to lowercase
-        let sam1 = "Added string";
-        console.log(sam.concat(sam1));
+        let sam1 = "       Added string               ";
+        console.log(sam.concat(sam1));  //it is used to join or concatenate two strings
+        console.log(sam1.trim());//It is used to remove extra spaces at start or end not in between
+        console.log(sam1.trimLeft()); //It is used to remove extra spaces or whitespaces only from right direction and similarly left,start,end
+        let sam2 ="Y";
+        console.log(sam2.padEnd(5,"X"));  //it pads the string with another string until it reaches a given length from end
+        console.log(sam2.padStart(5,"X"));  //it pads the string with another string until it reaches a given length from start
+        // To pad a number we need to convert it into string first then we can do padding 
+        //To convert a number into string we use toString() method
+        console.log(sam.charAt(8));  //it is used to find the character present at the given index
+        console.log(sam.charCodeAt(8)); //it is used to find the character code of the character present at the given index
+
+        //ECMAScript allows property access [] on strings
+        /* It treats a string like an array but it is not the case
+        If no character is found [] will return undefined and charAt() will return an empty string
+        It is read only.
+        i.e str[0]="A" it will not work though it will not give any error
+
+        */
+       //Convert string into an array
+       console.log(sam.split(" ")); // we can convert string into array using split() method and here we have used " " i.e separator 
+       // There are split on commas , split on spaces , split on pipe (|)
+       //If no separator is there, split returns entire string at index 0 position
+       
+
         
 
 
 
 
 
-        console.log(trimStart())
     </script>
 </head>
 <body>
