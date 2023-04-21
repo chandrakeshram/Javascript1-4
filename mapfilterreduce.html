@@ -14,6 +14,25 @@
             return element+10;   //if return is not mentioned then array created will contain undefined value
         })
         console.log(a);
+        //Only difference between map and forEach is map create new array which is created based on return statement
+
+        //Filter Method
+        //It is used add the filter in the array eg. You have all the elements of array that are odd
+        //The original array will not change 
+        let arr1 =[32,43,45,12,55,45,22];
+        let arr2 = arr1.filter((elem)=>{
+            return (elem%2)!==0;
+        })
+        console.log(arr2);
+
+        //Reduce Method
+        //It is used to reduce an array to a single value
+        let arr3=[32,45,3,45,23,12];
+        let newarr =arr3.reduce((e1, e2)=>{
+            return e1+e2;
+        })
+        console.log(newarr)
+
         
 
     </script>
