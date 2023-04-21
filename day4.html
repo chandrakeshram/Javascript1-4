@@ -35,8 +35,26 @@
         const integrated = arr.concat(arr1,arr2);  //concat method is used to contenate two or more arrays
         console.log(integrated);
         console.log(arr1.sort()); //remember sort will sort the array alphabetically not in ascending order or desceding order(IMP)
-    
-        
+        //If we want to sort array we must use compare function as argument to sort function
+        const compare =(a,b)=>{
+            return a-b;
+
+        }
+        console.log(arr1.sort(compare));  //Here compare() will compare the two values and if result is +ve then a is sorted with b 
+        //if result is -ve then a is not sorted with b and if result is 0 then no change is required since the numbers are the same
+
+        console.log(arr1.reverse()); //reverse function changes the actual array also
+        console.log(arr1)
+        let arey = [32,12,44,24,22,56,24];
+        //Splice and slice
+
+        //Splice method
+        console.log(arey.splice(2,3,322,323,324,325,326)); //it is used to add and delete element in array
+        //2 is the index from which we want to delete the elements and later on add the elements
+        //3 is the number of elements that we want to delete 
+        //322,323,324,325,326 are elements that we will insert 
+        console.log(arey);
+
  
     </script>
 </head>
