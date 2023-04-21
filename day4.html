@@ -62,6 +62,25 @@
         let newarr2 = arey.slice(2,6);
         console.log(newarr2); //It will create new array starting from 2nd index to 5th index only . 6th index will not be included in it.
 
+        //Using loop in arrays 
+
+        let numbe =[32,23,4,42,4,3];
+        let sum =0;
+        for(let i=0;i<numbe.length;i++){
+            sum +=numbe[i];
+
+        }
+        numbe.forEach((element) => {                    //here we have used forEach() loop to get square of each element
+            console.log(element*element);
+        })
+        console.log(`THe sum of all the number will be ${sum}`);
+
+        let template  = ['CHandrakesh','Naresh','Shivam','Bhaiya','Virat'];
+
+        template.forEach(function(some,idx){
+            console.log(some+" "+idx);
+        })
+
         
 
  
