@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //All string methods
+
+        let sam = "This is a string , string is very useful ";
+        console.log(sam.length); //it will return length of the string
+        console.log(sam.trim)//it will remove all the starting and ending spaces.
+        console.log(sam.slice(3));  //it will extract some part of the string
+        console.log(sam.substr(5,10)); //first parameter is starting of the resultant string and second paramter indicates length of string
+        console.log(sam.substring(-12,12));//substring is same as slice but if arguments passed are negative then they are treated as 0
+        console.log(sam.replace(/striNg/i,"STRING")); //it will replace string with STRING and because of global expression /i it will become case insensitive
+        console.log(sam.replace(/string/g,"STRING")); //same as above but due to global expression /g it will replace all the find matches 
+        console.log(sam.toUpperCase());  //convert entire string to uppercase
+        console.log(sam.toLowerCase());  //convert entire string to lowercase
+        let sam1 = "Added string";
+        console.log(sam.concat(sam1));
+        
+
+
+
+
+
+        console.log(trimStart())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
