@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let ran = random()*100;
-        console
+        let ran = Math.floor(Math.random()*100);
+        console.log(ran);
+        let inp = prompt("Enter the number you want to guess :");
+        do{
+            if(inp==ran){
+                console.log("Congratulations you got correct answer");
+                break;
+
+            }
+            else {
+                console.log("Sorry you did not got correct answer ");
+                inp =prompt("Enter the number you want to guess :");
+            }
+        }while(inp!=ran);
+        
     </script>
 </head>
 <body>
