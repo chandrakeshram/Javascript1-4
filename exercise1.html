@@ -9,12 +9,14 @@
         let ran = Math.floor(Math.random()*100);
         console.log(ran);
         let score=100;
+        console.log(typeof(score));
+
         let inp = prompt("Enter the number you want to guess :");
+        inp= Number.parseInt(inp);
+        console.log(typeof(inp));
         do{
             if(inp==ran){
-                alert("Congratulations you got correct answer & " +"your score was "+score );
-                break;
-
+                console.log(`Congratulations you got correct answer & your score was ${score}`);
             }
             else if(inp>ran) {
                 

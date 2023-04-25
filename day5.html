@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="script.js">
+        //All the contents here will be ignored 
+        //Advantages of Separate script files
+        //-Separation of concerns
+        //-Browser Caching 
+
+
+
+    </script> -->
+    <script>
+        //Console Object
+        console.log(console);
+        console.error("Hey this is an error"); //This will log an error of the message "Hey this........."
+        console.warn("Hey this is a warning"); //This will log a warning of the message "Hey this........"
+        console.assert(45===true); //This will throw error if expressions written in assert is false 
+        // Assertion failed: console.assert  ==> Error generated when assertion fails
+
+        //No error is thrown when assertion is successful
+
+        console.clear(); //Use to clear the screen of console
+        let obj = {1:"Super",
+             2:"King",
+             3:"Maker"
+        }
+        console.table(obj);
+        console.time("forLoop");
+        for(let i =0;i<100;i++){
+            console.log("Hello");
+
+        }
+        console.timeEnd("forLoop");
+        let j =100;
+        console.time("whileLoop");
+        while(j!=0){
+            console.log("Hello");
+            j--;
+        }
+        console.timeEnd("whileLoop");
+
+        let con =confirm("Do you want to Change the background color?");
+        if(con){
+            document.write("Background to change nhi hua lekin ye likh diya");
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
