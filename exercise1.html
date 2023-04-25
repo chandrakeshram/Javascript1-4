@@ -8,17 +8,26 @@
     <script>
         let ran = Math.floor(Math.random()*100);
         console.log(ran);
+        let score=100;
         let inp = prompt("Enter the number you want to guess :");
         do{
             if(inp==ran){
-                alert("Congratulations you got correct answer");
+                alert("Congratulations you got correct answer & " +"your score was "+score );
                 break;
 
             }
-            else {
-                alert("Sorry you did not got correct answer ");
+            else if(inp>ran) {
+                
+                alert("Your guess was greater than the actual number");
+                score--;
                 inp =prompt("Enter the number you want to guess :");
             }
+            else{
+                alert("Your guess was lesser than the actual number");
+                score--;
+                inp =prompt("Enter the number you want to guess :");
+            }
+            
         }while(inp!=ran);
         
     </script>
