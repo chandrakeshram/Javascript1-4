@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 2</title>
+    <script>
+        let user_score = 0;
+        let comp_score = 0;
+        let alp ="SWG";
+        let tie =0;
+         
+        let i=0;
+        while(i<3){
+            let comp_turn = alp[Math.floor(Math.random()*alp.length)];
+            let user_turn = prompt("It's your turn, Please enter S, W, G");
+            console.log(comp_turn);
+            console.log(user_turn);
+            if(comp_turn=='S' && user_turn=='S' || comp_turn=='W' && user_turn=='W' || comp_turn=='G' && user_turn=='G' ){
+                tie++;
+
+            }
+            else if(comp_turn=='S'){
+                if(user_turn=='W'){
+                    comp_score++;
+                }
+                else if(user_turn=='G'){
+                    user_score++;
+                }
+            }
+            else if(comp_turn=='W'){
+                if(user_turn=='S'){
+                    user_score++;
+                }
+                else if(user_turn=='G'){
+                    comp_score++;
+                }
+            }
+            else if(comp_turn=='G'){
+                if(user_turn=='S'){
+                    comp_score++;
+                }
+                else if(user_turn=='W'){
+                    user_score++;
+                }
+            }
+            
+
+
+            else if(user_turn=='S'){
+                if(comp_turn=='W'){
+                    user_score++;
+                }
+                else if(comp_turn=='G'){
+                    comp_score++;
+                }
+            }
+            else if(user_turn=='W'){
+                if(comp_turn=='S'){
+                    comp_score++;
+                }
+                else if(comp_turn=='G'){
+                    user_score++;
+                }
+            }
+            else if(user_turn=='G'){
+                if(comp_turn=='S'){
+                    user_score++;
+                }
+                else if(comp_turn=='W'){
+                    comp_score++;
+                }
+            }
+            i++;
+        }
+        console.log(comp_score);
+        console.log(user_score);
+
+        if(comp_score>user_score){
+            alert("Computer Won, You Lost");
+        }
+        else if(comp_score<user_score){
+            alert("You won , Computer Lost");
+
+        }
+        else {
+            alert("It is a tie")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<!--
+    ===========================RULES of GAME============================
+    If user = S && comp = W then user wins
+    if user = S && comp = G then comp wins
+    if user = W && comp = S then comp wins
+    if user = W && comp = G then user wins
+    if user = G && comp = S then user wins 
+    if user = G && comp = W then comp wins
+
+    If comp = S && user = W then comp wins
+    if comp = S && user = G then user wins
+    if comp = W && user = S then user wins
+    if comp = W && user = G then comp wins
+    if comp = G && user = S then comp wins 
+    if comp = G && user = W then user wins
+
+    Based on these rules the winner will be declared.
+
+
+-->
