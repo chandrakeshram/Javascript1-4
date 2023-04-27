@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 - Solution</title>
+    <style>
+        .m-5{
+            margin: 0 25px;
+            padding: 10px 10px;
+        }
+        html{
+            padding: 0 0;
+            margin: 0 0;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: grey;margin:0 10px">
+        <ul style="display:flex; list-style-type: none; margin: 0 25px; padding: 10 10;" >
+            <li class="m-5">Home</li>
+            <li class="m-5">About Us</li>
+            <li class="m-5">Contact Us</li>
+            <li class="m-5">Services</li>
+        </ul>
+    </nav>
+    <script>
+        document.body.firstElementChild.firstElementChild.firstElementChild.style.color="red";//alternative way
+        document.body.children[0].children[0].children[0].style.background ="yellow";
+        document.ul.children[0].style.fontSize="100px"; //This is wrong 
+
+    </script>
+</body>
+</html>
