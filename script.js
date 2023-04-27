@@ -55,5 +55,17 @@
 // console.log(a<b || a==b);
 // console.log(!false);
 
-let ctitle = document.getElementsByClassName("card-title")[0];
+let ctitle = document.getElementByClassName("card-title")[0];
 ctitle.style.color = "blue";
+
+let first = document.getElementById("p1");
+first.style.background="grey";
+
+let ctitles = document.getElementByClassName("nav-link");
+ctitles[3].style.fontSize="50px";
+let tags = document.getElementsByTagName("a");
+tags[2].style.fontSize="34px";
+let query = document.querySelectorAll(".nav-link");
+query[0].style.color="cyan";
+let firstquery =document.querySelector(".nav-link");
+firstquery.style.background="#32dac3";
