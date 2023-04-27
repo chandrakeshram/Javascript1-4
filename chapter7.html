@@ -28,8 +28,46 @@
     <script>
         document.body.firstElementChild.firstElementChild.firstElementChild.style.color="red";//alternative way
         document.body.children[0].children[0].children[0].style.background ="yellow";
-        document.ul.children[0].style.fontSize="100px"; //This is wrong 
+        // document.ul.children[0].style.fontSize="100px"; //This is wrong 
+        // document.body.children[0].style.fontSize="30px";
+        document.body.firstElementChild.style.background="pink";
+        document.body.firstElementChild.firstElementChild.style.background="blue"
+
 
     </script>
+    <table cellspacing="5" cellpadding="5" border="2px solid" align="center">
+        <caption>Table of Data</caption>
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>King</td>
+            <td>78</td>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>King</td>
+            <td>78</td>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>King</td>
+            <td>78</td>
+
+        </tr>
+        <!--Here though we have not used tbody explicity the browser automatically performs autocorrection
+        This will add tbody in source code -->
+
+
+    </table>
+    <div>
+        <p>This is paragraph tag</p>
+
+    </div>
 </body>
 </html>
