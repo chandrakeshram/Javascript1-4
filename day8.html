@@ -7,7 +7,9 @@
     <title>Walking through DOM Manipulation</title>
     
 </head>
-<body>
+    <body>
+    <h1>This is h1 tag</h1>
+    <p>This paragraph tag</p>
     <script>
         console.log(document.body); //it will return the entire body tag as  an object
         console.log(typeof(document.body))  
@@ -15,6 +17,10 @@
         console.log(document.head); //it will return the head as an object
         console.log(document.documentElement); //it will return the entire html document as an object
         console.log(typeof(document.documentElement))  
+
+        console.log(document.body.firstChild);
+        console.log(document.body.lastChild);
+        console.log(document.childNodes);
 
         //Children and Parent Nodes
 
@@ -26,16 +32,12 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Walking through DOM Manipulation</title>
     
-        </head>
-        <body>
-            <p>This is Paragraph</p>
-
-        </body>
-        </html>
-        */
+        // </body>
+        // </html>
+        
 
     </script>
 
     
-</body>
+    </body>
 </html>
