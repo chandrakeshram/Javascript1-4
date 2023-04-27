@@ -55,17 +55,22 @@
 // console.log(a<b || a==b);
 // console.log(!false);
 
-let ctitle = document.getElementByClassName("card-title")[0];
-ctitle.style.color = "blue";
+// let ctitle = document.getElementByClassName("card-title")[0];
+// ctitle.style.color = "blue";
 
-let first = document.getElementById("p1");
-first.style.background="grey";
+// let first = document.getElementById("p1");
+// first.style.background="grey";0
 
-let ctitles = document.getElementByClassName("nav-link");
-ctitles[3].style.fontSize="50px";
-let tags = document.getElementsByTagName("a");
-tags[2].style.fontSize="34px";
-let query = document.querySelectorAll(".nav-link");
-query[0].style.color="cyan";
-let firstquery =document.querySelector(".nav-link");
-firstquery.style.background="#32dac3";
+// let ctitles = document.getElementByClassName("nav-link");
+// ctitles[3].style.fontSize="50px";
+// let tags = document.getElementsByTagName("a");
+// tags[2].style.fontSize="34px";
+// let query = document.querySelectorAll(".nav-link");
+// query[0].style.color="cyan";
+// let firstquery =document.querySelector(".nav-link");
+// firstquery.style.background="#32dac3";
+
+console.log(document.getElementById("id1").matches(".box"));
+console.log(document.getElementById("id1").contains(document.getElementById("sp1")));  
+console.log(document.getElementById("sp1").contains(document.getElementById("id1")));
+console.log(document.getElementById("id1").closest(document.getElementById("#sp1")))      
