@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Classes methods</title>
+    <style>
+        .bg-red{
+            background-color: red;
+        }
+        .text-dark{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        <h1>This is first element with ID first</h1>
+    </div>
+    <script>
+        let first = document.getElementById('first');
+        
+        
+            first.className= "bg-red text-dark"; 
+            console.log(first.classList.remove("red"));  //used to remove classes that we dont want
+            console.log(first.classList.add("red"));
+            console.log(first.classList.toggle("red"));
+             //we can change classes of the element using javascript
+            console.log(first.classList.contains("text-dark"));
+
+    </script>
+</body>
+</html>
