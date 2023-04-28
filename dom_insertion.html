@@ -19,8 +19,16 @@
 
         let newelem = document.createElement('div');
         newelem.innerHTML="<h1>Hello Guys</h1>";
-        a.appendChild(newelem);
+        a.appendChild(newelem);   //here we are adding the child at the end of the element
 
+        let b = document.getElementById('first');
+        let newelem1 = document.createElement('section');
+        newelem1.innerHTML="<p>This is added in the div whose id is first and it is added in section";
+        b.append(newelem1);  //used to add element at the end
+        b.prepend(newelem);  //used to add element at the start
+        a.before(newelem);  //used to add element before the current element
+        a.after(newelem);   //used to add element after the current element
+        a.replaceWith(newelem1);  //used to replace current element
     </script>
     
 </body>
