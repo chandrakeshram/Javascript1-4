@@ -9,7 +9,7 @@
 <body>
     <h1 hidden id="1">Hello World</h1>
     <span>Hey this is span tag</span>
-    <button  onclick="showContent()">Click to show hidden text</button>
+    <button  onclick="showContent()" onkeypress="hideContent()">Click to show hidden text</button>
     <script>
         document.body.firstElementChild.innerHTML="<i>Hello Main Italic Ho gya</i>"
         //Note : innerHTML tag is valid only for HTML elements, You cannot apply it to comment nodes and text nodes 
@@ -18,6 +18,9 @@
         console.log(document.body.textContent)
         const showContent=()=>{
             document.getElementById("1").hidden=false;
+        }
+        const hideContent=()=>{
+            document.getElementById("1").hidden=true;
         }
         
 

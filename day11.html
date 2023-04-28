@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute_Methods</title>
+</head>
+<body>
+    <div class="container">
+        Hey I am first container
+    </div>
+    <div id="first" class="king" data-game="cricket" data-player="chandrakesh">
+        Hello guys 
+    </div>
+    <script>
+        let first = document.getElementById("first");
+        console.log(first.getAttribute("class"));
+        console.log(first.hasAttribute("class"));
+        console.log(first.setAttribute("class","super duper"));
+        console.log(first.getAttribute("class"));
+        first.removeAttribute("class");
+        console.log(first.attributes);
+        console.log(first.dataset.game);  
+
+
+
+    </script>
+    
+</body>
+</html>
