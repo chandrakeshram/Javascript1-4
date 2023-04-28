@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM- Insertion Adjacent</title>
+</head>
+<body>
+    <div id="first">
+        THis is first division
+    </div>
+    <script>
+        const hello=()=>{
+            document.getElementById('first').innerHTML="Singh is king";
+        }
+        let a = document.getElementById('first');
+        // a.insertAdjacentHTML("beforebegin","<h1>This is inserted in beforebegin</h1>");
+        // a.insertAdjacentText("beforebegin","Hello Guys");
+        // a.insertAdjacentElement("beforebegin",hello())
+        
+        //To remove any element we can use remove any element
+        a.remove();
+    </script>
+    
+</body>
+</html>
