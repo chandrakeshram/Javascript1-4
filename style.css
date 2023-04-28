@@ -17,3 +17,12 @@
 hr:not([size]) {
     height: 5px;
 }
+.container{
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    height: 70px;
+    padding: 2rem 2rem;
+    width: 70%;
+    background-color: aqua;
+}

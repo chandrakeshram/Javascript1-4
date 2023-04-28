@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise -3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Joke</h1>
+    </div>
+    <script>
+        const jokes = ["I love dad jokes, but I don't have kids, which makes me a Faux Pa",
+"I only know 25 letters of the alphabet — I just don't know y",
+"My dream job is to clean mirrors, because I can really see myself doing that",
+"I lost 25% of my roof last night",
+"I don't trust stairs They're always up to something",
+"RIP, boiling water You will be mist",
+"Two guys walked into a bar  The third guy ducked",
+"Two peanuts went walking down the street ,One was assaulted",
+"I'm so good at sleeping that I can do it with my eyes closed!",
+"I had a dream that I weighed less than a thousandth of a gram"];
+        let ranjoke = jokes[Math.floor(Math.random()*jokes.length)];
+        console.log(ranjoke);
+        document.body.firstElementChild.innerHTML=`<b>${ranjoke}</b>`;
+
+
+    </script>
+    
+</body>
+</html>
