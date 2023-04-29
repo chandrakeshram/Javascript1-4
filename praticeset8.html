@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice Set - 8</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <button id="first">Click Me</button>
+    <button id="second">Click Me</button>
+    <button id="third" onclick="alert('Kaise ho aap log')">Click Me</button> Simpler way to solve Question 1
+    <button id="fourth">Click Me</button>-->
+    <button id="first">Google</button>
+    <button id="second">Whatsapp</button>
+    <button id="third">Youtube</button>
+    <!-- <button id="third" onclick="alert('Kaise ho aap log')">Click Me</button> Simpler way to solve Question 1 -->
+    <button id="fourth"> ChatGPT</button>
+    <script>
+        // document.getElementById('first').className='red';
+        // document.getElementById('second').className='blue';
+        // document.getElementById('third').className='green';
+        // document.getElementById('fourth').className='yellow';
+        let first=document.getElementById('first');
+        let second=document.getElementById('second');
+        let third = document.getElementById('third');
+        let fourth=document.getElementById('fourth');
+        const fav_list=[];
+        const disp=(mess)=>{
+            fav_list.push(`${mess}`.innerHTML);
+            alert(`Added the website to your favorites list`);
+        }
+        first.addEventListener('click',()=>{
+            disp(mess);
+        });
+        
+        fourth.onclick =()=>{
+            alert("This is done via different approach");
+            fourth.style.background="pink";
+        }
+        //We could this question by directly mentioning the event in the button tag itself
+        //but we have used lengthy process here to understand better
+
+
+    </script>
+</body>
+</html>
