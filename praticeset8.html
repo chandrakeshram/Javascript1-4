@@ -18,6 +18,22 @@
         .yellow{
             background-color: yellow;
         }
+        .container{
+            height: 50px;
+            width: 50px;
+            border-radius: 40px;
+            
+        }
+        .container-bulb{
+            background-color: yellow;
+        }
+        .m-1{
+            margin: 1rem 1rem;
+
+        }
+        .p-1{
+            padding: 1rem 1rem;
+        }
 
     </style>
 </head>
@@ -26,36 +42,56 @@
     <button id="second">Click Me</button>
     <button id="third" onclick="alert('Kaise ho aap log')">Click Me</button> Simpler way to solve Question 1
     <button id="fourth">Click Me</button>-->
-    <button id="first">Google</button>
+    <!-- <button id="first">Google</button>
     <button id="second">Whatsapp</button>
-    <button id="third">Youtube</button>
+    <button id="third">Youtube</button> -->
     <!-- <button id="third" onclick="alert('Kaise ho aap log')">Click Me</button> Simpler way to solve Question 1 -->
-    <button id="fourth"> ChatGPT</button>
+    <!-- <button id="fourth"> ChatGPT</button> -->
+    <div class="main" style="display:flex;margin: 1rem 1rem;">
+        <div class="container yellow m-1 p-1"></div>
+        <div class="container red m-1 p-1"></div>
+        <div class="container green m-1 p-1"></div>
+    </div>
+    
     <script>
         // document.getElementById('first').className='red';
         // document.getElementById('second').className='blue';
         // document.getElementById('third').className='green';
         // document.getElementById('fourth').className='yellow';
-        let first=document.getElementById('first');
-        let second=document.getElementById('second');
-        let third = document.getElementById('third');
-        let fourth=document.getElementById('fourth');
-        const fav_list=[];
-        const disp=(mess)=>{
-            fav_list.push(`${mess}`.innerHTML);
-            alert(`Added the website to your favorites list`);
-        }
-        first.addEventListener('click',()=>{
-            disp(mess);
-        });
+        // let first=document.getElementById('first');
+        // let second=document.getElementById('second');
+        // let third = document.getElementById('third')
+        // let fourth=document.getElementById('fourth');
+        // const fav_list=[];
+        //To bookmarks these website we are adding it to the array
+        // second.addEventListener('click',()=>{
+        //     window.location='https://www.whatsapp.com';
+        // })
+        // third.addEventListener('click',()=>{
+        //     window.location='https://www.youtube.com';
+
+        // })
+        // first.addEventListener('click',()=>{
+        //     fav_list.push(first.innerHTML);
+        //     alert(`Added the website to your favorites list`);
+
+        // });
         
-        fourth.onclick =()=>{
-            alert("This is done via different approach");
-            fourth.style.background="pink";
-        }
+        // fourth.onclick =()=>{
+        //     alert("This is done via different approach");
+        //     fourth.style.background="pink";
+        // }
         //We could this question by directly mentioning the event in the button tag itself
         //but we have used lengthy process here to understand better
+        const dothis=()=>{
+            document.getElementsByClassName('container')[0].classList.toggle('yellow');
+            document.getElementsByClassName('container')[1].classList.toggle('red');
+            document.getElementsByClassName('container')[2].classList.toggle('green');
 
+
+            
+        }
+        setInterval(dothis,1000);
 
     </script>
 </body>
