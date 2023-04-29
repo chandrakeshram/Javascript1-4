@@ -9,9 +9,32 @@
 <body>
     <button id="btn">CLick Me</button>
     <script>
+        const func=()=>{
+            alert("Ye pehla wala hai kya?");
+        }
+        const func1=()=>{
+            alert("Ye dusra wala hai kya?")
+        }
         let btn = document.getElementById('btn');
         
-        btn.addEventListener('click',func);
+        
+        // let res = prompt("Please which wala event you want to run : ");
+        btn.addEventListener('click',function(event){
+            console.log(event.clientX ,event.clientY);
+            console.log(event.screenX,event.screenY);
+            console.log(event.timeStamp );
+            console.log(event.offsetX,event.offsetY)
+            console.log(event.composedPath())
+        });
+        // btn.addEventListener('click',func1);  //remember do not define entire function just try to pass single reference to addEventListener
+        // if(res==1){
+        //     btn.removeEventListener('click',func1);
+        // }
+        // else{
+        //     btn.removeEventListener('click',func);
+        // }
+
+
     </script>
 </body>
 </html>
