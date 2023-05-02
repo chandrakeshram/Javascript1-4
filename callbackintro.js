@@ -51,8 +51,9 @@ const original = (url, callback)=>{
 const timpass=(error,url)=>{
     if(error){
         console.error(error);
+        return;
     }else{
     console.log("Hum to hokar rahenge" ,url);}
 }
-original('https://cdn.jsdelivr.net/njkjkjhpm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js',timpass)
+original('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js',timpass)
 // loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js',tp);
