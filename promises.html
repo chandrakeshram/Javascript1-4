@@ -8,6 +8,17 @@
 </head>
 <body>
     <script>
+        let prom = new Promise(function(resolve,reject){
+            console.log("Hello");
+            resolve(100);
+           
+        })
+        console.log("Hello");
+        setTimeout(()=>{
+            console.log("Hello in 2 seconds")
+        },2000);
+        console.log("My name is John");
+        console.log(prom);
 
     </script>
 </body>
