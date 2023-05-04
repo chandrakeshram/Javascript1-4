@@ -11,12 +11,33 @@
         let p = new Promise((resolve,reject)=>{
             console.log("Promise is pending");
             setTimeout(()=>{
-                console.log("Promise is executed ");
+                console.log("Promise is fulfilled without any error");
                 resolve(100);
 
             },2000);
-            console.log("Promise is fulfilled");
+            
         });
+
+        let p1 = new Promise((resolve,reject)=>{
+            console.log("Promise is pending");
+            setTimeout(()=>{
+                
+                reject(new Error("Kuch to error aaya"));
+
+            },2000);
+            
+        });
+        //Whenever any promise will be resolved it will give some result and if rejected it will throw an error
+
+        // console.log(p,p1);
+        p.then((value)=>{
+            console.log("Congratulations your promise has been fulfilled successfully and resolved ",value)
+        });
+        p1.catch((error)=>{
+            console.error("Some error occured in P1");
+        });
+        
+
     </script>
     
 </body>
