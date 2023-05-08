@@ -20,6 +20,11 @@
         console.log("My name is John");
         console.log(prom);
 
+        let promise = new Promise(resolve=>{
+            setTimeout(()=>resolve("Done"),1000);
+        });
+        promise.then(alert)
+
     </script>
 </body>
 </html>
