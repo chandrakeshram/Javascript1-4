@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chaining</title>
+</head>
+<body>
+    <script>
+        let p1 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("Resolved after 2 seconds");
+                resolve(56);
+            })
+        });
+        p1.then((value)=>{           //we are overcoming the problem of callback hell.
+            console.log(value);
+        }).then(()=>{
+            return 3;
+        }).then(()=>{
+            setTimeout(()=>{
+                console.log("Akhir resolve ho hi gya")
+            },2000);
+        }).then(console.log("Ruk ja bhai"));
+    </script>
+</body>
+</html>
