@@ -2,7 +2,7 @@ const scriptLoader=(url1, url2,callback)=>{
     let script = document.createElement('script');
     let style = document.createElement('style');
     script.src=url1;
-    style.href=url2;
+    
     document.body.append(script);
     document.body.append(style);
     script.onload=()=>{
